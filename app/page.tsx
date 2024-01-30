@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div className="w-screen h-screen flex flex-col justify-center items-center">
       <div className="text-center max-w-screen-sm mb-10">
-        <h1 className="text-stone-200 font-bold text-2xl">
+        <h1 className="text-stone-800 font-bold text-2xl">
           Movie app
         </h1>
       </div>
