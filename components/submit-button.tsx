@@ -35,7 +35,6 @@ export function SubmitButton({ children }: { children: React.ReactNode }) {
         </svg>
       )}
       <span aria-live="polite" className="sr-only" role="status">
-        {pending ? 'Loading' : 'Submit form'}
       </span>
     </button>
   );

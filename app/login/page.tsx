@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Form } from 'app/form';
 import { signIn } from 'app/auth';
-import { SubmitButton } from 'app/submit-button';
+import { SubmitButton } from '@/components/submit-button';
 
 export default function Login() {
   return (
@@ -25,11 +25,9 @@ export default function Login() {
         >
           <SubmitButton>Sign in</SubmitButton>
           <p className="text-center text-sm text-gray-600">
-            {"Don't have an account? "}
             <Link href="/register" className="font-semibold text-gray-800">
               Sign up
             </Link>
-            {' for free.'}
           </p>
         </Form>
       </div>
