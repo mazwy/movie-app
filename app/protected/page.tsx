@@ -1,13 +1,12 @@
 import { auth, signOut } from 'app/auth';
 import React from "react";
-import {db, favoritemovies, genres, movies} from "../../drizzle/schema";
+import {db, favoritemovies, genres} from "../../drizzle/schema";
 import {movie, user} from "../../drizzle/migrations/schema";
 import RefreshButton from "@/components/refresh-button";
 import Link from "next/link";
-import {desc, eq, sql} from "drizzle-orm";
+import {desc, eq} from "drizzle-orm";
 import FavoritesButton from "@/components/favorites-button";
 import AccountButton from "@/components/account-button";
-import {now} from "@internationalized/date";
 
 
 export default async function ProtectedPage() {
@@ -55,14 +54,6 @@ export default async function ProtectedPage() {
             </div>
           ))}
         </div>
-      </div>
-      <div>
-        <button
-          type="button"
-          className="fixed bottom-4 text-white right-4 px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-600 transition-colors"
-        >
-          Add a movie
-        </button>
       </div>
     </>
   );
