@@ -6,6 +6,8 @@ import {user} from "../../../drizzle/migrations/schema";
 import Link from "next/link";
 import FavoritesButton from "@/components/favorites-button";
 import {SignOut} from "@/app/protected/page";
+import AccountButton from "@/components/account-button";
+import React from "react";
 
 export default async function FavoritePage() {
   let session = await auth();
@@ -29,6 +31,8 @@ export default async function FavoritePage() {
         <Link href={"/protected"}>
           <h1 className="text-lg font-semibold">Movie App</h1>
         </Link>
+        <FavoritesButton/>
+        <AccountButton/>
         <SignOut/>
       </div>
 

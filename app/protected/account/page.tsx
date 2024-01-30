@@ -10,6 +10,8 @@ import {Form} from "@/app/form";
 import {SubmitButton} from "@/components/submit-button";
 import {EmailChangeForm} from "@/app/email-change-form";
 import {router} from "next/client";
+import AccountButton from "@/components/account-button";
+import React from "react";
 
 export default async function FavoritePage() {
   let session = await auth();
@@ -33,6 +35,8 @@ export default async function FavoritePage() {
         <Link href={"/protected"}>
           <h1 className="text-lg font-semibold">Movie App</h1>
         </Link>
+        <FavoritesButton/>
+        <AccountButton/>
         <SignOut/>
       </div>
 
