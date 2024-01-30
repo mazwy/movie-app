@@ -7,3 +7,4 @@ tech used:
 - [next.js]
 - [next-auth]
 - [tailwindcss]
+- [postgres]
